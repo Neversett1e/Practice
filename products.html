@@ -41,35 +41,33 @@
 <header>
 	<div class="container agile-banner_nav">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<a class="navbar-brand" href="index.html"> JIU NUO <span class="display">metallurgical machinery co.ltd</span></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<a class="navbar-brand" href="index.html"> БМЗ <span class="display">холдинг БМК</span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
-				</button>
-	
-				<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-					<ul class="navbar-nav ml-auto">
-							<li class="nav-item ">
-									<a class="nav-link" href="index.html">Home</a>
-								</li>
-								<li class="nav-item ">
-									<a class="nav-link" href="about.html">Company</a>
-								</li> 
-								<!-- <li class="nav-item">
-									<a class="nav-link" href="culture.html">Culture</a>
-								</li>  -->
-								<li class="nav-item active">
-									<a class="nav-link" href="products.html">Products</a>
-								</li>
-								<li class="nav-item">
-										<a class="nav-link" href="visit.html">Foreign Visit</a>
-									</li>
-								<li class="nav-item">
-									<a class="nav-link" href="video.html">Video</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="contact.html">Contact</a>
-								</li>
-					</ul>
+			</button>
+
+			<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">Информация</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="products.html">Продукция</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="visit.html">Партнёры</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="video.html">Видео</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Контакты</a>
+					</li>
+				</ul>
 			</div>
 			
 		</nav>
@@ -88,18 +86,29 @@
 <section class="wthree-row w3-gallery py-sm-5 py-3" id="section3">
 	<div class="container-fluid py-md-5 py-3 text-center"> 
 		<ul class="portfolio-area clearfix">
-			<!-- 这里做循环 生成图片列表    需要一个小图  一个大图======================================== -->
 			<script>
+				let stringsArray = ["Заготовка", "Прокат круглый", "Трубы бесшовные", "Металлокорд", "Проволока", "Прочее", "Фибра стальная", "строка3"];
+				let descriptionArray = ["Арматура холоднодеформированная Арматурный в моткахㅤㅤㅤㅤㅤㅤㅤ Прокат арматурный ", "Cтальные \n" +
+				" Для нефте- и газопроводовㅤㅤ \n" +
+				" Для производства бурильных трубㅤㅤㅤ\n" +
+				" Для производства насосно-компрессорных труб", "Трубы бесшовные", "Металлокорд для грузовых шин \n" +
+				" Металлокорд для крупногабаритных и сверх крупногабаритных шин \n" +
+				" Металлокорд для легко-грузовых шин", " RML (РВД) ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ\n" +
+				" Бронзированная ㅤㅤㅤㅤㅤㅤㅤㅤ\n" +
+				" Общего назначения ㅤㅤㅤㅤㅤ\n" +
+				" Пружинная", "Прочее", " Анкернаяㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ \n" +
+				" Волноваяㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ \n" +
+				" Микрофибра ", "строка3"];
 				for(let i=1;i<8;i++)
 				{
-					document.write('<li class="portfolio-item2"><a class="image-zoom" href="products/'+i+'.jpg" data-gal="prettyPhoto[gallery]"> <img src="products/'+i+'.jpg" alt="这是标题" ></a><p class="pName">这是标题</p></li>')
+					document.write('<li class="portfolio-item2"><div class="thumb-post"><a class="image-zoom" href="products/'+i+'.jpg" data-gal="prettyPhoto[gallery]"> <img src="products/'+i+'.jpg" alt="i" ></a><div class="overlay"><h3>'+stringsArray[i-1]+'</h3><p class="ggs">'+descriptionArray[i-1]+'</p></div></div><p class="pName">'+stringsArray[i-1]+'</p></li>')
 				}
-				</script> 
-		</ul> 
+				</script>
+		</ul>
 	</div>
- 
+
 </section>
-  
+
 <!-- copyright -->
 <div class="copyright py-4">
 	<div class="container">
