@@ -7519,6 +7519,11 @@ button.bg-dark:focus {
 .mb-4,
 .my-4 {
   margin-bottom: 1.5rem !important;
+}
+
+.my-44 {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
   color: #333;
 }
 
